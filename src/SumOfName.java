@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class MainApplication {
+public class SumOfName {
     public static void main(String[] args) {
-        NameAsNumber nameAsNumber = new NameAsNumber();
+        StringAsNumber nameAsNumber = new StringAsNumber();
         Scanner scanner = new Scanner(System.in);
         String restart;
         do {
             System.out.println("Input a name:");
             String name = scanner.next();
-            System.out.println(nameAsNumber.calculateSumOfName(name));
+            System.out.println(nameAsNumber.sumOfString(name));
             System.out.println("Do you want to calculate the sum of another name? (y/n)");
             restart = scanner.next();
         }while(restart.compareToIgnoreCase("Y") == 0);

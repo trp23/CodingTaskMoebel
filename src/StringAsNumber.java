@@ -1,17 +1,20 @@
-public class NameAsNumber {
+/**
+ * This class implements the functionality to represent a String as a Number
+ */
+public class StringAsNumber {
     /**
      * This method calculates the sum of all letters of the given String.
      * Every letter is equivalent to the number of its position in the english alphabet.
-     * @param name String to calculate the sum of
+     * @param text String to calculate the sum of
      * @return sum of the letters
      */
-    public int calculateSumOfName(String name) {
+    public int sumOfString(String text) {
         //Transform input to uppercase and remove whitespaces
-        String nameInUppercase = name.toUpperCase().replaceAll("\\s", "");
+        String formattedText = text.toUpperCase().replaceAll("\\s", "");
         int sum = 0;
         //Iterate over all characters
-        for (int i = 0; i < nameInUppercase.length(); i++) {
-            char currentChar = nameInUppercase.charAt(i);
+        for (int i = 0; i < formattedText.length(); i++) {
+            char currentChar = formattedText.charAt(i);
             //Check if current character is part of the english alphabet
             if ((currentChar >= 'A') && (currentChar <= 'Z')) {
                 sum += ((currentChar - 'A') + 1); //Calculate corresponding number and add to sum
