@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * This application calculates the sum of a name/string given by the user.
+ */
 public class Main {
     public static void main(String[] args) {
         StringAsNumber nameAsNumber = new StringAsNumber();
@@ -11,7 +14,7 @@ public class Main {
             System.out.println(nameAsNumber.sumOfString(name));
             System.out.println("Do you want to calculate the sum of another name? (y/n)");
             restart = scanner.next();
-        }while(restart.compareToIgnoreCase("Y") == 0);
+        } while(restart.compareToIgnoreCase("Y") == 0);
         scanner.close();
     }
 }
