@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SumOfName {
+public class Main {
     public static void main(String[] args) {
         StringAsNumber nameAsNumber = new StringAsNumber();
         Scanner scanner = new Scanner(System.in);
